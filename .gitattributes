@@ -1,0 +1,4 @@
+# O index.html e gerado pelo robo (LF). Sem isto o git reescreve as quebras
+# de linha e imprime um aviso no stderr a cada commit, o que ja quebrou o
+# script de publicacao automatica uma vez.
+* -text
