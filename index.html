@@ -220,8 +220,13 @@
   }
   .card-body { display: flex; flex-direction: column; gap: 9px; padding: 14px 18px 18px; flex: 1; }
   .card-store {
+    display: flex; align-items: center; gap: 8px;
     font-family: var(--font-mono); font-size: 10px; font-weight: 500;
     text-transform: uppercase; letter-spacing: .2em; color: var(--whisper);
+  }
+  .is-new {
+    font-weight: 500; letter-spacing: .16em; color: var(--accent);
+    border: 1px solid rgba(255,77,0,.45); border-radius: 999px; padding: 2px 7px;
   }
   .card-title {
     font-size: 14.5px; font-weight: 500; line-height: 1.35; color: rgba(255,255,255,.9);
@@ -314,7 +319,7 @@
         <div data-hero-gate>
           <div class="hero-eyebrow">
             <span class="pulse" aria-hidden="true"></span>
-            <span class="label label--accent">Curadoria automática · 28/07/2026, 19:21</span>
+            <span class="label label--accent">Curadoria automática · 28/07/2026, 19:35</span>
           </div>
           <h1 class="hero-title"><span class="line"><span>Radar</span></span><span class="line"><span>de <em>ofertas</em></span></span></h1>
           <p class="hero-lead">Um robô varre o varejo brasileiro o dia inteiro e só deixa passar o que tem desconto de verdade. Sem preço inflado na véspera, sem cupom furado.</p>
@@ -364,7 +369,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Creatina 1kg Suplemento Monohidratada em pó 100% Pura - Soldiers Nutrition</h3>
             <div class="card-prices"><s>R$ 239,90</s><strong>R$ 59,90</strong></div>
             
@@ -387,7 +392,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Creatina Monohidratada Pura 500g Dark Lab Unidade</h3>
             <div class="card-prices"><s>R$ 129,90</s><strong>R$ 32,90</strong></div>
             
@@ -410,7 +415,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Máquina De Acabamento Corta Cabelo Profissional Kemei 2299 P Preto 127/220v</h3>
             <div class="card-prices"><s>R$ 189,90</s><strong>R$ 61,23</strong></div>
             
@@ -433,7 +438,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Xiaomi Poco X7 Pro Dual SIM 5g 512gb Preto 12ram 50mpx</h3>
             <div class="card-prices"><s>R$ 5.900,00</s><strong>R$ 2.184,00</strong></div>
             
@@ -456,7 +461,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Kit 10 Potes Vidro 370ml Hermético Marmita Forno Refratário Star House</h3>
             <div class="card-prices"><s>R$ 159,99</s><strong>R$ 64,70</strong></div>
             
@@ -479,7 +484,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Parafusadeira Furadeira C/ 2 Baterias Maleta Kit Completo Led Eixo Flexível Vários Níveis…</h3>
             <div class="card-prices"><s>R$ 299,00</s><strong>R$ 118,79</strong></div>
             
@@ -502,7 +507,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Ducha Loren Shower Ultra Eletrônica 127V 5500W Lorenzetti</h3>
             <div class="card-prices"><s>R$ 250,90</s><strong>R$ 99,75</strong></div>
             
@@ -525,7 +530,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Aspirador de Pó e Água WAP GTW 10 1400W de Potência com Bocal de Sopro</h3>
             <div class="card-prices"><s>R$ 485,57</s><strong>R$ 203,92</strong></div>
             
@@ -548,7 +553,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Lixeira Inteligente 16l Sensor Automático Tampa Touch Casa Cinza</h3>
             <div class="card-prices"><s>R$ 148,00</s><strong>R$ 62,23</strong></div>
             
@@ -571,7 +576,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Celular Samsung Galaxy A17 5g Com Ia, 128gb, 4gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip5…</h3>
             <div class="card-prices"><s>R$ 1.855,00</s><strong>R$ 806,65</strong></div>
             
@@ -594,7 +599,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Creatina Monohidratada Pura 1kg Dark Lab Unidade Sem sabor</h3>
             <div class="card-prices"><s>R$ 159,90</s><strong>R$ 69,90</strong></div>
             
@@ -617,7 +622,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Smartphone Infinix Smart 10 4GB RAM 256GB SSD Câmera 8MP + IA, Tela 6.67 HD+ 120Hz, Bater…</h3>
             <div class="card-prices"><s>R$ 1.458,00</s><strong>R$ 642,42</strong></div>
             
@@ -640,7 +645,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Smart TV LG UHD AI UA75 50 polegadas HDR10 Pro Processador α7 AI Ger8 webOS 25</h3>
             <div class="card-prices"><s>R$ 5.000,00</s><strong>R$ 2.179,00</strong></div>
             
@@ -663,7 +668,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Jogo De Ferramentas Soquetes Encaixe 1/4 E 1/2 Pol. Catraca Reversível Aço Crv 94 Peças C…</h3>
             <div class="card-prices"><s>R$ 454,39</s><strong>R$ 207,10</strong></div>
             
@@ -686,7 +691,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Kit 10 Pote De Vidro Marmita Hermético 370ml Freezer Fitness Rishon</h3>
             <div class="card-prices"><s>R$ 159,90</s><strong>R$ 73,00</strong></div>
             
@@ -709,7 +714,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Mini Ventilador Soprador Ar Turbo 130000rpm Assoprador Sem Fio Recarregável Usb 3 Níveis…</h3>
             <div class="card-prices"><s>R$ 96,00</s><strong>R$ 44,70</strong></div>
             
@@ -732,7 +737,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Smartphone Motorola Moto G06 4g 6.9pol 128gb 4gb Câmera 50mp Azul</h3>
             <div class="card-prices"><s>R$ 1.499,00</s><strong>R$ 715,00</strong></div>
             
@@ -755,7 +760,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Kit 700 Figurinha Do Álbum Copa Do Mundo 2026- 100 Envelopes</h3>
             <div class="card-prices"><s>R$ 1.000,00</s><strong>R$ 494,70</strong></div>
             
@@ -778,7 +783,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Kit 10 Potes Herméticos Vidro 640ml Starhouse Marmita Forno Micro-ondas Airfryer com 4 tr…</h3>
             <div class="card-prices"><s>R$ 189,99</s><strong>R$ 95,00</strong></div>
             
@@ -801,7 +806,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Smartphone Motorola Moto G56 5g - 256gb 16gb (8gb Ram+8gb Ram Boost) Camera 50mp Sony Lyt…</h3>
             <div class="card-prices"><s>R$ 2.699,00</s><strong>R$ 1.360,00</strong></div>
             
@@ -824,7 +829,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Kit 70 Figurinhas Do Álbum Copa Do Mundo 2026 Pronta Entrega</h3>
             <div class="card-prices"><s>R$ 100,00</s><strong>R$ 50,44</strong></div>
             
@@ -847,7 +852,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Conjunto Lacoste Tennis X Novak Djokovic Laranja Gg</h3>
             <div class="card-prices"><s>R$ 499,00</s><strong>R$ 249,50</strong></div>
             
@@ -870,7 +875,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Aspirador De Pó e Água Wap Gtw 10 Compacto 1400w 10 Litros Amarelo</h3>
             <div class="card-prices"><s>R$ 399,00</s><strong>R$ 203,92</strong></div>
             
@@ -893,7 +898,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
+            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">ASPIRADOR DE PÓ E ÁGUA ELECTROLUX EM INOX 127V GT20I</h3>
             <div class="card-prices"><s>R$ 699,00</s><strong>R$ 358,70</strong></div>
             
@@ -921,7 +926,7 @@
         <p>Preços e disponibilidade coletados automaticamente e sujeitos a alteração a qualquer momento. Confira as condições finais na página da loja.</p>
       </div>
       <div class="footer-meta">
-        <span class="label">Última atualização: 28/07/2026, 19:21 (horário de Brasília)</span>
+        <span class="label">Última atualização: 28/07/2026, 19:35 (horário de Brasília)</span>
         <span class="label">Gerado automaticamente</span>
       </div>
     </div>
