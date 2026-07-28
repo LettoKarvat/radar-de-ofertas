@@ -209,6 +209,15 @@
     font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: .04em;
     padding: 5px 10px; border-radius: 999px;
   }
+  /* Selo livre escrito no painel (ex.: "queima de estoque"). */
+  .note {
+    position: absolute; top: 11px; right: 11px; z-index: 2; max-width: 60%;
+    background: rgba(8,8,10,.86); color: #fff; backdrop-filter: blur(6px);
+    font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+    letter-spacing: .12em; text-transform: uppercase;
+    padding: 5px 9px; border-radius: 999px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
   .card-body { display: flex; flex-direction: column; gap: 9px; padding: 14px 18px 18px; flex: 1; }
   .card-store {
     font-family: var(--font-mono); font-size: 10px; font-weight: 500;
@@ -305,16 +314,10 @@
         <div data-hero-gate>
           <div class="hero-eyebrow">
             <span class="pulse" aria-hidden="true"></span>
-            <span class="label label--accent">Curadoria automática · 28/07/2026, 19:06</span>
+            <span class="label label--accent">Curadoria automática · 28/07/2026, 19:19</span>
           </div>
-          <h1 class="hero-title">
-            <span class="line"><span>Radar</span></span>
-            <span class="line"><span>de <em>ofertas</em></span></span>
-          </h1>
-          <p class="hero-lead">
-            Um robô varre o varejo brasileiro o dia inteiro e só deixa passar o que tem
-            desconto de verdade. Sem preço inflado na véspera, sem cupom furado.
-          </p>
+          <h1 class="hero-title"><span class="line"><span>Radar</span></span><span class="line"><span>de <em>ofertas</em></span></span></h1>
+          <p class="hero-lead">Um robô varre o varejo brasileiro o dia inteiro e só deixa passar o que tem desconto de verdade. Sem preço inflado na véspera, sem cupom furado.</p>
           <div class="hero-actions">
             <a class="btn btn--solid" href="#ofertas">Ver as 24 ofertas</a>
             
@@ -329,11 +332,11 @@
               <div class="stat-label label">Maior desconto</div>
             </div>
             <div class="stat">
-              <div class="stat-value">R$ 12.474,74</div>
+              <div class="stat-value">R$ 13.316,00</div>
               <div class="stat-label label">Economia somada</div>
             </div>
             <div class="stat">
-              <div class="stat-value" data-count="1">1</div>
+              <div class="stat-value" data-count="2">2</div>
               <div class="stat-label label">Lojas</div>
             </div>
           </div>
@@ -342,13 +345,13 @@
     </section>
 
     <div class="band" aria-hidden="true">
-      <div class="marquee"><ul class="marquee-set"><li><span>Desconto real</span><i aria-hidden="true">✳</i></li><li><span>Curadoria automática</span><i aria-hidden="true">✳</i></li><li><span>Até 75% off</span><i aria-hidden="true">✳</i></li><li><span>Sem preço inflado</span><i aria-hidden="true">✳</i></li><li><span>Atualizado várias vezes ao dia</span><i aria-hidden="true">✳</i></li><li><span>Mercado Livre</span><i aria-hidden="true">✳</i></li></ul><ul class="marquee-set" aria-hidden="true"><li><span>Desconto real</span><i aria-hidden="true">✳</i></li><li><span>Curadoria automática</span><i aria-hidden="true">✳</i></li><li><span>Até 75% off</span><i aria-hidden="true">✳</i></li><li><span>Sem preço inflado</span><i aria-hidden="true">✳</i></li><li><span>Atualizado várias vezes ao dia</span><i aria-hidden="true">✳</i></li><li><span>Mercado Livre</span><i aria-hidden="true">✳</i></li></ul></div>
+      <div class="marquee"><ul class="marquee-set"><li><span>Desconto real</span><i aria-hidden="true">✳</i></li><li><span>Curadoria automática</span><i aria-hidden="true">✳</i></li><li><span>Até 75% off</span><i aria-hidden="true">✳</i></li><li><span>Sem preço inflado</span><i aria-hidden="true">✳</i></li><li><span>Atualizado várias vezes ao dia</span><i aria-hidden="true">✳</i></li><li><span>Mercado Livre</span><i aria-hidden="true">✳</i></li><li><span>Amazon</span><i aria-hidden="true">✳</i></li></ul><ul class="marquee-set" aria-hidden="true"><li><span>Desconto real</span><i aria-hidden="true">✳</i></li><li><span>Curadoria automática</span><i aria-hidden="true">✳</i></li><li><span>Até 75% off</span><i aria-hidden="true">✳</i></li><li><span>Sem preço inflado</span><i aria-hidden="true">✳</i></li><li><span>Atualizado várias vezes ao dia</span><i aria-hidden="true">✳</i></li><li><span>Mercado Livre</span><i aria-hidden="true">✳</i></li><li><span>Amazon</span><i aria-hidden="true">✳</i></li></ul></div>
     </div>
 
     <section class="offers" id="ofertas">
       <div class="shell">
         <div class="offers-head">
-          <h2 class="offers-title">Achados<br>do momento</h2>
+          <h2 class="offers-title">Achados do momento</h2>
           <p class="label">[ 24 itens · ordenados por relevância ]</p>
         </div>
         <div class="grid">
@@ -358,6 +361,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_894230-MLA111390627295_052026-AB.webp" alt="" loading="eager" decoding="async">
             <span class="badge">-75%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -380,6 +384,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_942122-MLA99923169249_112025-AB.webp" alt="" loading="eager" decoding="async">
             <span class="badge">-75%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -402,6 +407,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_921106-MLB111066859744_052026-AB--maquina-de-acabamento-corta-cabelo-profissional-kemei-2299-p.webp" alt="" loading="eager" decoding="async">
             <span class="badge">-68%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -424,6 +430,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_744110-MLA99521621748_122025-AB.webp" alt="" loading="eager" decoding="async">
             <span class="badge">-63%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -442,32 +449,11 @@
       </article>
 
       <article class="card" data-reveal>
-        <a class="card-link" href="https://www.mercadolivre.com.br/parafusadeira-furadeira-c-2-baterias-maleta-kit-completo-led-eixo-flexivel-varios-niveis-torque-simake/p/MLB50181290?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
-          <div class="card-media">
-            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_641541-MLA111608975062_062026-AB.webp" alt="" loading="lazy" decoding="async">
-            <span class="badge">-60%</span>
-          </div>
-          <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
-            <h3 class="card-title">Parafusadeira Furadeira C/ 2 Baterias Maleta Kit Completo Led Eixo Flexível Vários Níveis…</h3>
-            <div class="card-prices"><s>R$ 299,00</s><strong>R$ 118,79</strong></div>
-            
-            <div class="card-foot">
-              <span class="card-cta">Pegar promoção</span>
-              <span class="chip" aria-hidden="true">
-                <svg class="arrow arrow--out" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <svg class="arrow arrow--in" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="card" data-reveal>
         <a class="card-link" href="https://www.mercadolivre.com.br/kit-10-potes-vidro-370ml-hermetico-marmita-forno-refratario-star-house/p/MLB53222545?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_972589-MLA99948367685_112025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-60%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -486,10 +472,34 @@
       </article>
 
       <article class="card" data-reveal>
+        <a class="card-link" href="https://www.mercadolivre.com.br/parafusadeira-furadeira-c-2-baterias-maleta-kit-completo-led-eixo-flexivel-varios-niveis-torque-simake/p/MLB50181290?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
+          <div class="card-media">
+            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_641541-MLA111608975062_062026-AB.webp" alt="" loading="lazy" decoding="async">
+            <span class="badge">-60%</span>
+            
+          </div>
+          <div class="card-body">
+            <span class="card-store">Mercado Livre</span>
+            <h3 class="card-title">Parafusadeira Furadeira C/ 2 Baterias Maleta Kit Completo Led Eixo Flexível Vários Níveis…</h3>
+            <div class="card-prices"><s>R$ 299,00</s><strong>R$ 118,79</strong></div>
+            
+            <div class="card-foot">
+              <span class="card-cta">Pegar promoção</span>
+              <span class="chip" aria-hidden="true">
+                <svg class="arrow arrow--out" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg class="arrow arrow--in" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card" data-reveal>
         <a class="card-link" href="https://www.mercadolivre.com.br/ducha-loren-shower-ultra-eletronica-127v-5500w-lorenzetti/p/MLB19590091?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_769568-MLA112624845176_062026-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-60%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -512,6 +522,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_985627-MLA100060225801_122025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-58%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -530,15 +541,16 @@
       </article>
 
       <article class="card" data-reveal>
-        <a class="card-link" href="https://www.mercadolivre.com.br/conjunto-de-tacas-de-vidro-340ml-diamond-line-6-pecas-transparente/p/MLB38869001?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
+        <a class="card-link" href="https://www.mercadolivre.com.br/lixeira-inteligente-16l-sensor-automatico-tampa-touch-casa/up/MLBU3746568325?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
-            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_761729-MLA100084409089_122025-AB.webp" alt="" loading="lazy" decoding="async">
+            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_844008-MLB112258869982_062026-AB--lixeira-inteligente-16l-sensor-automatico-tampa-touch-casa.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-58%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
-            <h3 class="card-title">Conjunto de Taças de Vidro 340ml Diamond Line - 6 Peças Transparente</h3>
-            <div class="card-prices"><s>R$ 78,99</s><strong>R$ 33,39</strong></div>
+            <h3 class="card-title">Lixeira Inteligente 16l Sensor Automático Tampa Touch Casa Cinza</h3>
+            <div class="card-prices"><s>R$ 148,00</s><strong>R$ 62,23</strong></div>
             
             <div class="card-foot">
               <span class="card-cta">Pegar promoção</span>
@@ -556,6 +568,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_755351-MLA99597188918_122025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-57%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -574,32 +587,11 @@
       </article>
 
       <article class="card" data-reveal>
-        <a class="card-link" href="https://www.mercadolivre.com.br/smartphone-infinix-smart-10-4gb-ram-256gb-ssd-camera-8mp-ia-tela-667-hd-120hz-bateria-5000mah-processador-t7250-android-15-go-dual-chip-preto/p/MLB56327005?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
-          <div class="card-media">
-            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_964227-MLA100071062557_122025-AB.webp" alt="" loading="lazy" decoding="async">
-            <span class="badge">-56%</span>
-          </div>
-          <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
-            <h3 class="card-title">Smartphone Infinix Smart 10 4GB RAM 256GB SSD Câmera 8MP + IA, Tela 6.67 HD+ 120Hz, Bater…</h3>
-            <div class="card-prices"><s>R$ 1.458,00</s><strong>R$ 642,42</strong></div>
-            
-            <div class="card-foot">
-              <span class="card-cta">Pegar promoção</span>
-              <span class="chip" aria-hidden="true">
-                <svg class="arrow arrow--out" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <svg class="arrow arrow--in" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="card" data-reveal>
         <a class="card-link" href="https://www.mercadolivre.com.br/creatina-monohidratada-pura-1kg-dark-lab-unidade-sem-sabor/p/MLB25929487?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_848860-MLA99964507641_112025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-56%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -618,15 +610,16 @@
       </article>
 
       <article class="card" data-reveal>
-        <a class="card-link" href="https://www.mercadolivre.com.br/cesto-de-roupa-suja-de-bambu-com-tampa-e-alcas-50-litros-kontuz/p/MLB25294667?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
+        <a class="card-link" href="https://www.mercadolivre.com.br/smartphone-infinix-smart-10-4gb-ram-256gb-ssd-camera-8mp-ia-tela-667-hd-120hz-bateria-5000mah-processador-t7250-android-15-go-dual-chip-preto/p/MLB56327005?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
-            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_907604-MLA95700628814_102025-AB.webp" alt="" loading="lazy" decoding="async">
+            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_964227-MLA100071062557_122025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-56%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
-            <h3 class="card-title">Cesto De Roupa Suja De Bambu Com Tampa E Alças 50 Litros Kontuz</h3>
-            <div class="card-prices"><s>R$ 119,90</s><strong>R$ 52,90</strong></div>
+            <h3 class="card-title">Smartphone Infinix Smart 10 4GB RAM 256GB SSD Câmera 8MP + IA, Tela 6.67 HD+ 120Hz, Bater…</h3>
+            <div class="card-prices"><s>R$ 1.458,00</s><strong>R$ 642,42</strong></div>
             
             <div class="card-foot">
               <span class="card-cta">Pegar promoção</span>
@@ -644,6 +637,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_884169-MLA106908124660_022026-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-56%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -662,54 +656,11 @@
       </article>
 
       <article class="card" data-reveal>
-        <a class="card-link" href="https://www.mercadolivre.com.br/cafe-torrado-e-moido-tradicional-pouch-500g-intensidade-8-uniao-pacote/p/MLB34178051?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
-          <div class="card-media">
-            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_895784-MLA109306321185_032026-AB.webp" alt="" loading="lazy" decoding="async">
-            <span class="badge">-55%</span>
-          </div>
-          <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
-            <h3 class="card-title">Café Torrado E Moido Tradicional Pouch 500g Intensidade 8 União Pacote</h3>
-            <div class="card-prices"><s>R$ 45,90</s><strong>R$ 20,50</strong></div>
-            
-            <div class="card-foot">
-              <span class="card-cta">Pegar promoção</span>
-              <span class="chip" aria-hidden="true">
-                <svg class="arrow arrow--out" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <svg class="arrow arrow--in" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="card" data-reveal>
-        <a class="card-link" href="https://www.mercadolivre.com.br/kit-10-pote-de-vidro-marmita-hermetico-370ml-freezer-fitness-rishon/p/MLB66060206?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
-          <div class="card-media">
-            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_605578-MLA113633610823_062026-AB.webp" alt="" loading="lazy" decoding="async">
-            <span class="badge">-54%</span>
-          </div>
-          <div class="card-body">
-            <span class="card-store">Mercado Livre</span>
-            <h3 class="card-title">Kit 10 Pote De Vidro Marmita Hermético 370ml Freezer Fitness Rishon</h3>
-            <div class="card-prices"><s>R$ 159,90</s><strong>R$ 73,00</strong></div>
-            
-            <div class="card-foot">
-              <span class="card-cta">Pegar promoção</span>
-              <span class="chip" aria-hidden="true">
-                <svg class="arrow arrow--out" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <svg class="arrow arrow--in" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <article class="card" data-reveal>
         <a class="card-link" href="https://www.mercadolivre.com.br/jogo-de-ferramentas-soquetes-encaixe-14-e-12-pol-catraca-reversivel-aco-crv-94-pecas-com-maleta-tkf94-the-black-tools/p/MLB58503383?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_671666-MLA99870769883_112025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-54%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -728,10 +679,57 @@
       </article>
 
       <article class="card" data-reveal>
+        <a class="card-link" href="https://www.mercadolivre.com.br/kit-10-pote-de-vidro-marmita-hermetico-370ml-freezer-fitness-rishon/p/MLB66060206?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
+          <div class="card-media">
+            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_605578-MLA113633610823_062026-AB.webp" alt="" loading="lazy" decoding="async">
+            <span class="badge">-54%</span>
+            
+          </div>
+          <div class="card-body">
+            <span class="card-store">Mercado Livre</span>
+            <h3 class="card-title">Kit 10 Pote De Vidro Marmita Hermético 370ml Freezer Fitness Rishon</h3>
+            <div class="card-prices"><s>R$ 159,90</s><strong>R$ 73,00</strong></div>
+            
+            <div class="card-foot">
+              <span class="card-cta">Pegar promoção</span>
+              <span class="chip" aria-hidden="true">
+                <svg class="arrow arrow--out" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg class="arrow arrow--in" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card" data-reveal>
+        <a class="card-link" href="https://www.amazon.com.br/dp/B0C2Z1QWBP" target="_blank" rel="nofollow sponsored noopener">
+          <div class="card-media">
+            <img class="card-img" src="https://i.promobit.com.br/300/812224442617852734264019047612.jpg" alt="" loading="lazy" decoding="async">
+            <span class="badge">-62%</span>
+            
+          </div>
+          <div class="card-body">
+            <span class="card-store">Amazon</span>
+            <h3 class="card-title">VULT CREOGEL CACH E CRESPOS 250g</h3>
+            <div class="card-prices"><s>R$ 35,99</s><strong>R$ 13,58</strong></div>
+            
+            <div class="card-foot">
+              <span class="card-cta">Pegar promoção</span>
+              <span class="chip" aria-hidden="true">
+                <svg class="arrow arrow--out" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg class="arrow arrow--in" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card" data-reveal>
         <a class="card-link" href="https://www.mercadolivre.com.br/mini-ventilador-soprador-ar-turbo-130000rpm-assoprador-sem-fio-recarregavel-usb-3-niveis-jato-forte-portatil-multiuso-limpeza-teclado-carro-acende-churrasqueira-marca-davely/p/MLB69649128?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_667790-MLA113358900874_072026-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-53%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -750,15 +748,16 @@
       </article>
 
       <article class="card" data-reveal>
-        <a class="card-link" href="https://www.mercadolivre.com.br/kit-2-refletor-super-led-400w-ip67-holofote-bivolt-prova-dagua-branco-frio-6500k-preto/p/MLB57490176?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
+        <a class="card-link" href="https://www.mercadolivre.com.br/smartphone-motorola-moto-g06-4g-69pol-128gb-4gb-camera-50mp-azul/p/MLB62405543?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
-            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_753073-MLA110946060098_052026-AB.webp" alt="" loading="lazy" decoding="async">
+            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_780211-MLA99100981801_112025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-52%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
-            <h3 class="card-title">Kit 2 Refletor Super Led 400w Ip67 Holofote Bivolt Prova D'água Branco Frio 6500k Preto</h3>
-            <div class="card-prices"><s>R$ 99,98</s><strong>R$ 48,00</strong></div>
+            <h3 class="card-title">Smartphone Motorola Moto G06 4g 6.9pol 128gb 4gb Câmera 50mp Azul</h3>
+            <div class="card-prices"><s>R$ 1.499,00</s><strong>R$ 715,00</strong></div>
             
             <div class="card-foot">
               <span class="card-cta">Pegar promoção</span>
@@ -776,6 +775,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_719889-MLB110799756479_042026-AB--kit-700-figurinha-do-album-copa-do-mundo-2026-100-envelopes.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-51%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -798,6 +798,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_942823-MLA113526261849_062026-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-50%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -820,6 +821,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_919734-MLA99464900322_112025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-50%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -838,15 +840,39 @@
       </article>
 
       <article class="card" data-reveal>
-        <a class="card-link" href="https://www.mercadolivre.com.br/parafusadeira-furadeira-de-impacto-the-black-tools-profissional-tb-21px-2-baterias-com-maleta-60hz-amarelo/p/MLB30144703?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
+        <a class="card-link" href="https://www.mercadolivre.com.br/kit-70-figurinhas-do-album-copa-do-mundo-2026-pronta-entrega/up/MLBU3923294598?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
           <div class="card-media">
-            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_865332-MLA96868279679_102025-AB.webp" alt="" loading="lazy" decoding="async">
+            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_876614-MLB110800889269_042026-AB--kit-70-figurinhas-do-album-copa-do-mundo-2026-pronta-entrega.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-50%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
-            <h3 class="card-title">Parafusadeira Furadeira De Impacto The Black Tools Profissional TB-21PX 2 Baterias Com Ma…</h3>
-            <div class="card-prices"><s>R$ 319,90</s><strong>R$ 159,90</strong></div>
+            <h3 class="card-title">Kit 70 Figurinhas Do Álbum Copa Do Mundo 2026 Pronta Entrega</h3>
+            <div class="card-prices"><s>R$ 100,00</s><strong>R$ 50,44</strong></div>
+            
+            <div class="card-foot">
+              <span class="card-cta">Pegar promoção</span>
+              <span class="chip" aria-hidden="true">
+                <svg class="arrow arrow--out" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg class="arrow arrow--in" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card" data-reveal>
+        <a class="card-link" href="https://www.mercadolivre.com.br/conjunto-lacoste-tennis-x-novak-djokovic/up/MLBU4113654336?matt_word=wellintonkarvat&amp;matt_tool=31462104" target="_blank" rel="nofollow sponsored noopener">
+          <div class="card-media">
+            <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_634787-MLB113325712441_062026-AB--conjunto-lacoste-tennis-x-novak-djokovic.webp" alt="" loading="lazy" decoding="async">
+            <span class="badge">-50%</span>
+            
+          </div>
+          <div class="card-body">
+            <span class="card-store">Mercado Livre</span>
+            <h3 class="card-title">Conjunto Lacoste Tennis X Novak Djokovic Laranja Gg</h3>
+            <div class="card-prices"><s>R$ 499,00</s><strong>R$ 249,50</strong></div>
             
             <div class="card-foot">
               <span class="card-cta">Pegar promoção</span>
@@ -864,6 +890,7 @@
           <div class="card-media">
             <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_2X_944970-MLA99949674111_112025-AB.webp" alt="" loading="lazy" decoding="async">
             <span class="badge">-49%</span>
+            
           </div>
           <div class="card-body">
             <span class="card-store">Mercado Livre</span>
@@ -894,7 +921,7 @@
         <p>Preços e disponibilidade coletados automaticamente e sujeitos a alteração a qualquer momento. Confira as condições finais na página da loja.</p>
       </div>
       <div class="footer-meta">
-        <span class="label">Última atualização: 28/07/2026, 19:06 (horário de Brasília)</span>
+        <span class="label">Última atualização: 28/07/2026, 19:19 (horário de Brasília)</span>
         <span class="label">Gerado automaticamente</span>
       </div>
     </div>
