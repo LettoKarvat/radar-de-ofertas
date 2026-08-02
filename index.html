@@ -228,6 +228,24 @@
     font-weight: 500; letter-spacing: .16em; color: var(--accent);
     border: 1px solid rgba(255,77,0,.45); border-radius: 999px; padding: 2px 7px;
   }
+  /* Identificacao de publicidade por card. O CDC (art. 36) exige que o
+     consumidor identifique a publicidade "facil e imediatamente", e o Guia do
+     CONAR pede identificacao ostensiva — rodape nao cumpre. */
+  .is-ad {
+    font-weight: 500; letter-spacing: .16em; color: rgba(255,255,255,.82);
+    background: rgba(255,255,255,.12); border-radius: 999px; padding: 2px 7px;
+  }
+  .ad-notice {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    margin-bottom: 26px; padding: 12px 16px;
+    background: rgba(255,255,255,.05); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent); border-radius: 10px;
+    font-size: 13.5px; color: rgba(255,255,255,.78);
+  }
+  .ad-notice b {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 500;
+    letter-spacing: .2em; text-transform: uppercase; color: var(--accent);
+  }
   .card-title {
     font-size: 14.5px; font-weight: 500; line-height: 1.35; color: rgba(255,255,255,.9);
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
@@ -316,10 +334,15 @@
   <main>
     <section class="hero" id="top">
       <div class="shell">
+        <p class="ad-notice">
+          <b>Publicidade</b>
+          <span>Este site publica links de afiliado e pode receber comissão pelas compras feitas
+          através deles, sem nenhum custo extra para você.</span>
+        </p>
         <div data-hero-gate>
           <div class="hero-eyebrow">
             <span class="pulse" aria-hidden="true"></span>
-            <span class="label label--accent">Curadoria automática · 02/08/2026, 18:42</span>
+            <span class="label label--accent">Curadoria automática · 02/08/2026, 19:19</span>
           </div>
           <h1 class="hero-title"><span class="line"><span>Radar</span></span><span class="line"><span>de <em>ofertas</em></span></span></h1>
           <p class="hero-lead">Um robô varre o varejo brasileiro o dia inteiro e só deixa passar o que tem desconto de verdade. Sem preço inflado na véspera, sem cupom furado.</p>
@@ -369,7 +392,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Whey Isolate Protein Fuse 1.8kg Brownie Dark Lab</h3>
             <div class="card-prices"><s>R$ 699,90</s><strong>R$ 131,12</strong></div>
             
@@ -392,7 +415,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Espelho 100x50 Orgânico Corpo Inteiro Grande Moldura Caramelo</h3>
             <div class="card-prices"><s>R$ 399,99</s><strong>R$ 91,99</strong></div>
             
@@ -415,7 +438,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Enssu Aparador De Pelos Corporais Masculino Com Base Cor Preto</h3>
             <div class="card-prices"><s>R$ 489,99</s><strong>R$ 122,61</strong></div>
             
@@ -438,7 +461,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Enssu Aparador De Pelos Corporais Masculino Com Base Cor Azul</h3>
             <div class="card-prices"><s>R$ 489,99</s><strong>R$ 122,61</strong></div>
             
@@ -461,7 +484,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Azeite de Oliva Extra Virgem Português Herdade do Esporão Vidro 500ml</h3>
             <div class="card-prices"><s>R$ 136,46</s><strong>R$ 49,39</strong></div>
             
@@ -484,7 +507,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Monitor Portátil 15.6''com Usb C Dupla/hdmi Fhd 1080p 60hz</h3>
             <div class="card-prices"><s>R$ 998,00</s><strong>R$ 354,59</strong></div>
             
@@ -507,7 +530,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Panela De Pressão Brinox Pressure 4,2l Ø20 X 14,5 Cm Vanilla Baunilha</h3>
             <div class="card-prices"><s>R$ 477,69</s><strong>R$ 207,10</strong></div>
             
@@ -530,7 +553,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Colágeno Hidrolisado 120 Caps Dark Lab Sabor Sem sabor</h3>
             <div class="card-prices"><s>R$ 90,00</s><strong>R$ 39,90</strong></div>
             
@@ -553,7 +576,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Eps-6905 Balança Epsilon Inteligente Bluetooth Com App, Lcd, Vidro Temperado, 180kg</h3>
             <div class="card-prices"><s>R$ 59,99</s><strong>R$ 26,40</strong></div>
             
@@ -576,7 +599,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Parafusadeira E Furadeira De Impacto Tb-21pw 21v 3/8 The Black Tools Com Jogo De Soquetes…</h3>
             <div class="card-prices"><s>R$ 339,90</s><strong>R$ 159,60</strong></div>
             
@@ -599,7 +622,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Xiaomi Poco X8 Pro 5g 512gb 12gb Global Prova D'água C/ Nfc Preto</h3>
             <div class="card-prices"><s>R$ 5.999,00</s><strong>R$ 2.855,00</strong></div>
             
@@ -622,7 +645,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Câmera De Vídeo Wi-Fi Intelbras IM3 C MicroSD 32GB Branco</h3>
             <div class="card-prices"><s>R$ 436,89</s><strong>R$ 214,50</strong></div>
             
@@ -645,7 +668,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Kit 10 Pote De Vidro Marmita Hermético 640ml Freezer Fitness Rishon</h3>
             <div class="card-prices"><s>R$ 188,10</s><strong>R$ 92,43</strong></div>
             
@@ -668,7 +691,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Whey Protein Concentrado 1kg Chocolate Dark Lab</h3>
             <div class="card-prices"><s>R$ 349,90</s><strong>R$ 169,90</strong></div>
             
@@ -691,7 +714,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Perfume Carolina Herrera 212 VIP Men Eau de Toilette 200ml masculino</h3>
             <div class="card-prices"><s>R$ 1.029,00</s><strong>R$ 515,19</strong></div>
             
@@ -714,7 +737,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Coenzima Q10 200mg Pura Alta Concentração 60 Cápsulas - Forged Nutrition</h3>
             <div class="card-prices"><s>R$ 139,90</s><strong>R$ 69,95</strong></div>
             
@@ -737,7 +760,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Power Bank Basike 20000mAh para Notebook e Celular com Cabo USB-C 65W</h3>
             <div class="card-prices"><s>R$ 342,00</s><strong>R$ 179,48</strong></div>
             
@@ -760,7 +783,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Placa De Video Geforce Nvidia Pny Rtx5060ti 8gb Oc Gddr7</h3>
             <div class="card-prices"><s>R$ 4.999,00</s><strong>R$ 2.689,00</strong></div>
             
@@ -783,7 +806,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Furadeira Parafusadeira Sem Fio A Bateria Gpb12vd 12v 3/8 10mm Com Maleta E Acessórios Gr…</h3>
             <div class="card-prices"><s>R$ 169,90</s><strong>R$ 94,05</strong></div>
             
@@ -806,7 +829,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Vídeoporteiro Residencial Módulo Interno E Externo IVR 1070 HS Branco E Preto Intelbras</h3>
             <div class="card-prices"><s>R$ 1.075,00</s><strong>R$ 611,91</strong></div>
             
@@ -829,7 +852,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Invigo Nutri Enrich - Máscara 500ml</h3>
             <div class="card-prices"><s>R$ 250,00</s><strong>R$ 143,20</strong></div>
             
@@ -852,7 +875,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Video Porteiro Ivr 1010 Branco E Preto Intelbras 110V/220V</h3>
             <div class="card-prices"><s>R$ 770,39</s><strong>R$ 446,40</strong></div>
             
@@ -875,7 +898,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Perfume Carolina Herrera Good Girl Eau de Parfum 150 ml feminino</h3>
             <div class="card-prices"><s>R$ 1.128,00</s><strong>R$ 659,00</strong></div>
             
@@ -898,7 +921,7 @@
             
           </div>
           <div class="card-body">
-            <span class="card-store">Mercado Livre<b class="is-new">novo</b></span>
+            <span class="card-store"><b class="is-ad">publi</b>Mercado Livre<b class="is-new">novo</b></span>
             <h3 class="card-title">Pasta de Amendoim Com Whey Protein Leite em Pó (600g) Dr Peanut</h3>
             <div class="card-prices"><s>R$ 62,45</s><strong>R$ 36,69</strong></div>
             
@@ -924,10 +947,13 @@
         <p><strong>Transparência:</strong> participamos de programas de afiliados (Mercado Livre, Amazon, Shopee, AliExpress e outros). Podemos receber comissão por compras qualificadas feitas através dos nossos links, sem nenhum custo extra para você.</p>
         
         <p>Preços e disponibilidade coletados automaticamente e sujeitos a alteração a qualquer momento. Confira as condições finais na página da loja.</p>
+        <p>As ofertas são coletadas das APIs oficiais das lojas e a página é atualizada
+        a cada 3 horas. Os preços exibidos foram verificados
+        em 02/08/2026, 19:19 (horário de Brasília).</p>
       </div>
       <div class="footer-meta">
-        <span class="label">Última atualização: 02/08/2026, 18:42 (horário de Brasília)</span>
-        <span class="label">Gerado automaticamente</span>
+        <span class="label">Última atualização: 02/08/2026, 19:19 (horário de Brasília)</span>
+        <span class="label">Atualizado a cada 3 horas</span>
       </div>
     </div>
   </footer>
